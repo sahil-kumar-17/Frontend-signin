@@ -8,7 +8,7 @@ function App() {
   const [view, setView] = useState("form");
   useEffect(() => {
     if (view === "users") {
-      axios.get('https://dg1p3p1ary5rs.cloudfront.net//all')
+      axios.get('https://dg1p3p1ary5rs.cloudfront.net/all')
         .then(response => {
           setUser(response.data);
         })
